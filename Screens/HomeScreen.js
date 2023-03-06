@@ -5,29 +5,29 @@ import PosterMovie from "./components/PosterMovie";
 
 export default function HomeScreen({navigation}){
 //cardMovie
-const logo=require("./images/DisneyPlus.png"); 
-const view1=require("./images/slider.png");
-const disney=require("./images/disney.png");
-const geographic=require("./images/geographic.png");
-const marvel=require("./images/marvel.png");
-const pixar=require("./images/pixar.png");
+const logo=require("../assets/images/DisneyPlus.png"); 
+const view1=require("../assets/images/slider.png");
+const disney=require("../assets/images/disney.png");
+const geographic=require("../assets/images/geographic.png");
+const marvel=require("../assets/images/marvel.png");
+const pixar=require("../assets/images/pixar.png");
 
 //PosterMovie
-const soul=require("./images/poster8.png");
-const loki=require("./images/poster1.png");
-const mulan=require("./images/poster2.png");
-const falcon=require("./images/poster3.png");
-const avengers=require("./images/poster4.png");
-const thor=require("./images/poster5.png");
-const salazars=require("./images/poster7.png");
-const raya=require("./images/poster9.png");
-const luca=require("./images/poster10.png");
-const ford=require("./images/poster11.png");
-const dark=require("./images/poster12.png");
+const soul=require("../assets/images/poster8.png");
+const loki=require("../assets/images/poster1.png");
+const mulan=require("../assets/images/poster2.png");
+const falcon=require("../assets/images/poster3.png");
+const avengers=require("../assets/images/poster4.png");
+const thor=require("../assets/images/poster5.png");
+const salazars=require("../assets/images/poster7.png");
+const raya=require("../assets/images/poster9.png");
+const luca=require("../assets/images/poster10.png");
+const ford=require("../assets/images/poster11.png");
+const dark=require("../assets/images/poster12.png");
 
 //Video
-const marvelVideo =require("./images/slider3.png")
-const muchmore=require("./images/muchmore.jpg")
+const marvelVideo =require("../assets/images/slider3.png")
+const muchmore=require("../assets/images/muchmore.jpg")
 
 return(
   <ScrollView>
