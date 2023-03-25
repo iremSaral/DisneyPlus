@@ -38,20 +38,20 @@ const add=require("../assets/images/add.png")
         <View style={{flexDirection:"row", alignItems:"center"}}>
           <Pressable  style={styles.buttons}    onPress={() =>
      status.isPlaying ? video.current.pauseAsync() : video.current.playAsync()} >
-          <Entypo name='controller-play' size={25} color="black"/>
+          <Entypo name='controller-play' size={25} color="#1D283E"/>
           <Text style={styles.text} >{status.isPlaying ? 'Pause' : 'Play'}</Text>
           </Pressable>
         </View>
-        <View style={{backgroundColor:"black",flexDirection:"row",alignItems:"center"}}>
-        <View style={{backgroundColor:"black",flexDirection:"column",alignItems:"center",padding:10}}>
+        <View style={{backgroundColor:"#1D283E",flexDirection:"row",alignItems:"center"}}>
+        <View style={{backgroundColor:"#1D283E",flexDirection:"column",alignItems:"center",padding:10}}>
           <FontAwesome size={25} name="plus" color="white"/>
           <Text style={{color:"gray"}}>Play List</Text>
         </View>
-        <View style={{backgroundColor:"black",flexDirection:"column",alignItems:"center",padding:10}}>
+        <View style={{backgroundColor:"#1D283E",flexDirection:"column",alignItems:"center",padding:10}}>
           <FontAwesome size={25} name="group" color="white"/>
           <Text style={{color:"gray"}}>GroupWatch</Text>
         </View>
-        <View style={{backgroundColor:"black",flexDirection:"column",alignItems:"center",padding:10}}>
+        <View style={{backgroundColor:"#1D283E",flexDirection:"column",alignItems:"center",padding:10}}>
           <FontAwesome size={25} name="download" color="white"/>
           <Text style={{color:"gray"}}>İndir</Text>
         </View>
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   },
   Back:{
     alignItems:"center",
-    backgroundColor:"black",
+    backgroundColor:"#1D283E",
     width:Dimensions.get("window").width,
     height:Dimensions.get("window").height*2,
 
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     borderRadius:5
   },
   text:{
-    color:"black",
+    color:"#1D283E",
     fontSize:20,
     fontWeight:"bold"
   },

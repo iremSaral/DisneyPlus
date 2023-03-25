@@ -3,7 +3,9 @@ import { StyleSheet, Image,ScrollView,TouchableOpacity, View,Text,Button ,SafeAr
 import CardMovie from "./components/CardMovie";
 import PosterMovie from "./components/PosterMovie";
 
+
 export default function HomeScreen({navigation}){
+
 //cardMovie
 const logo=require("../assets/images/DisneyPlus.png"); 
 const view1=require("../assets/images/slider.png");
@@ -33,7 +35,7 @@ return(
   <ScrollView>
 <SafeAreaView style={styles.SafeArea}>
 <View style={styles.viewLogo}>
-<Image source={logo} style={styles.image}/>
+<Image source={disney} style={styles.image}/>
 </View>
 <View style={styles.view1}>
   <TouchableOpacity>
@@ -89,24 +91,24 @@ const styles = StyleSheet.create({
   },
  VideoView:{
   height:Dimensions.get('window').height/2.9,
-  backgroundColor:"black"
+  backgroundColor:"#1D283E"
  },
   SafeArea:{
     alignItems:"center",
-    backgroundColor:"black",
+    backgroundColor:"#1D283E",
     width:Dimensions.get('window').width,
  
   },
   view1:{
     height:Dimensions.get('window').height/4,
     width:370,
-    borderColor:"black",
+    borderColor:"#1D283E",
     backgroundColor:"gray"
   },
   viewLogo:{
     height:Dimensions.get('window').height/12,
     width:Dimensions.get('window').width-2,
-    backgroundColor:"black",
+    backgroundColor:"#1D283E",
     alignItems:"center"
   },
   view2:{

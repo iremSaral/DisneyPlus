@@ -1,0 +1,82 @@
+{
+    "movies":[
+        {"id":"1" ,
+        "name":"loki", 
+        "image":"poster1.png",
+        "found":"marvel.mp4"
+        },
+        
+        {"id":"2" ,
+        "name":"Mulan",
+        "image":"poster2.png",
+        "found":"disney.mp4"},
+        
+        {"id":"3" ,
+        "name":"The Flacon",
+        "image":"poster3.png",
+        "found":"marvel.mp4"},
+
+        {"id":"4" ,
+        "name":"Avengers EndGame",
+        "image":"poster4.png",
+        "found":"marvel.mp4"}, 
+
+        {"id":"5",
+        "name":"Thor",
+        "image":"poster5.png",
+        "found":"marvel.mp4"},
+
+        {"id":"6" ,
+        "name":"Pırates Carıbbean",
+        "image":"poster7.png",
+        "found":"disney.mp4"},
+
+        {"id":"7" ,
+        "name":"SOUL",
+        "image":"poster8.png",
+        "found":"pixar.mp4"},
+
+        {"id":"8" ,
+        "name":"RAYA",
+        "image":"poster9.png",
+        "found":"disney.mp4"},
+
+        {"id":"9" ,
+        "name":"LUCA",
+        "image":"poster10.png",
+        "found":"disney.mp4"},
+
+        {"id":"10" ,
+        "name":"Ford&Ferrarı",
+        "image":"poster11.png",
+        "found":"disney.mp4"},
+
+        {"id":"11" ,
+        "name":"Dark&Phoenix",
+        "image":"poster12.png",
+        "found":"marvel.mp4"},
+
+        {"id":"12" ,
+        "name":"Pixar",
+        "image":"pixar.png",
+        "found":"pixar.mp4"},
+
+        {"id":"13" ,
+        "name":"Geographic",
+        "image":"geographic.png",
+        "found":"geographic.mp4"},
+        
+        {"id":"14" ,
+        "name":"disney",
+        "image":"disney.png",
+        "found":"disney.mp4"},
+        {"id":"15" ,
+        "name":"Marvel",
+        "image":"marvel.png",
+        "found":"marvel.mp4"} 
+        
+
+        
+        
+        ]      
+    }

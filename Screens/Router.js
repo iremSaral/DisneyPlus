@@ -29,7 +29,7 @@ export default function App() {
 
   return (  
     <NavigationContainer  screenOptions={{}}>
-    <Bottom.Navigator barStyle={{backgroundColor:"black", height:Dimensions.get('window').height/12}} > 
+    <Bottom.Navigator barStyle={{backgroundColor:"#1D283E", height:Dimensions.get('window').height/12}} > 
       <Bottom.Screen
         name="Home"
         component={MovieStack}
