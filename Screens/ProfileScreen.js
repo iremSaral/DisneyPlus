@@ -1,8 +1,15 @@
 
+import { useState } from 'react';
 import { StyleSheet,ScrollView, Text,Image, View,TouchableOpacity,Dimensions } from 'react-native';
-import pp from '../assets/images/logo.png'
 const {width,height}=Dimensions.get('window');
+import {users} from './users.json';
+import UserReturn from './userReturn';
+
 export default function HomeScreen({navigation}){
+
+  const [user,setUser] =useState("");
+ 
+
     return(
       <ScrollView>
       <View style={styles.container}>
@@ -20,15 +27,8 @@ export default function HomeScreen({navigation}){
         marginTop:10
         }}>Who is watching ?
         </Text>
-        <View style={{justifyContent:'space-between'}}>
-        <TouchableOpacity style={{flex:1/2}}>
-          <Image source={pp} style={styles.profile}/>
-        </TouchableOpacity>
-        <Text style={{color:'white',position:'absolute',marginTop:180,marginLeft:70}}>Me</Text>
-       
-        </View>
-        <View>
-
+        <View style={{padding:10, justifyContent:'space-around' }}>
+          <UserReturn data={users}/>
         </View>
    
     </View>
@@ -39,8 +39,9 @@ export default function HomeScreen({navigation}){
 const styles=StyleSheet.create({
 container:{
   backgroundColor:'#1D283E',
-  width,
   height,
+
+ 
 },
 touch:{
   marginTop:40,
@@ -53,5 +54,11 @@ profile:{
    borderRadius:100,
    marginTop:20,
    borderColor:'white',
-   borderWidth:2,},
+   borderWidth:2,
+},
+photo:{
+width:"100%",
+backgroundColor:"#1D283E",
+height:"90%",
+  },
 })

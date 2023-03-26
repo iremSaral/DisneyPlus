@@ -1,0 +1,33 @@
+{
+    "users":[
+        {
+            "id":"1",
+            "name":"irem",
+            "image":"mickeygirl.jpg",
+            "email":"irem@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id":"2",
+            "name":"Mickey",
+            "image":"mickeymouse.png",
+            "email":"mickey@gmail.com",
+            "password":"1234"
+
+        },
+        {
+            "id":"3",
+            "name":"Olaf",
+            "image":"olaf.jpg",
+            "email":"olaf@gmail.com",
+            "password":"1234"
+        },
+        {
+            "id":"4",
+            "name":"Rabbit",
+            "image":"tavşan.jpg",
+            "email":"Rabbit@gmail.com",
+            "password":"1234"
+        }
+    ]
+}

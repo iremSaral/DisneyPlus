@@ -10,6 +10,7 @@ const {width,height}=Dimensions.get("window");
 export default function SearcScreen(){
 
 const [query,setQuery]=useState("");
+
   return(
   <View  style={styles.container}>
     <View style={styles.searcView}>
