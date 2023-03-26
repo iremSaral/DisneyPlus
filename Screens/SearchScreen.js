@@ -1,46 +1,29 @@
 import React, { useState } from 'react';
-import { Text, View,Image,FlatList,TextInput,StyleSheet,Dimensions } from 'react-native';
-import { ScrollView ,TouchableHighlight} from 'react-native-gesture-handler';
-import {getImage} from './ReturnImage';
-import { SearchBar } from 'react-native-elements'
+import { Text, View,TextInput,StyleSheet,Dimensions } from 'react-native';
 import movies from './data';
-import { renderMovies } from './RenderJson';
+import Feather from 'react-native-vector-icons/Feather';
+import SearchFilter from './components/searchFilter';
+
 
 const {width,height}=Dimensions.get("window");
 
 export default function SearcScreen(){
 
-  //RenderMovie
-  renderMovies=({item})=>{
-
-  console.log(item.image.toUpperCase())
-   return(
-    <TouchableHighlight style={styles.card}>
-      <View>
-        <Image source={getImage(item.image)} style={styles.photo}/>
-        <Text>{item.name}</Text>
-      </View>
-    </TouchableHighlight>
-  )
-}
-
-
-
+const [query,setQuery]=useState("");
   return(
   <View  style={styles.container}>
-    <TextInput style={styles.textInput}/>
+    <View style={styles.searcView}>
+      <Feather name='search' size={20} />
+     <TextInput placeholder='Search' 
+     value={query}
+      onChangeText={(text)=>{setQuery(text)}}/>
+    </View>
     <Text style={styles.kesfet}>Keşfet</Text>
-    <FlatList
-    vertical
-    numColumns={2}
-    showsVerticalScrollIndicator={false}
-    data={movies.movies}
-    renderItem={this.renderMovies}
-    keyExtractor={(item,index)=>index.toString()}
-    />
+    
+    <SearchFilter data={movies.movies} input={query} setInput={setQuery}/>
+   
   </View>
   );
-  
 
 }
 
@@ -52,20 +35,6 @@ container:{
   backgroundColor:"#1D283E",
   flex:1
 },
-card:{
-  color:"gray",
-  width:width/2,
-  margin:"2%",
-  height:height/3,
-  elevation:12,
-  borderBottomLeftRadius:0,
-  borderBottomRightRadius:0,
-},
-photo:{
-width:"100%",
-backgroundColor:"#1D283E",
-height:"90%"
-},
 kesfet:{
 textAlign:"left",
 fontSize:15,
@@ -76,6 +45,16 @@ textInput:{
   height:40,
   width:width/1.1,
   backgroundColor:'white',
-  marginTop:30,
+
 },
+searcView:{
+padding:10,
+flexDirection:'row',
+width:'95%',
+backgroundColor:'white',
+borderRadius:0,
+height:'8%',
+marginTop:40
+},
+
 })

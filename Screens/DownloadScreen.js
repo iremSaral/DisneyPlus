@@ -1,27 +1,15 @@
 import React, { Component } from 'react';
 import { Text, View,Image,FlatList,StyleSheet,Dimensions } from 'react-native';
 import { ScrollView ,TouchableHighlight} from 'react-native-gesture-handler';
-import Searchbar from './components/SearchBar';
-import movies from './data';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const {width,height}=Dimensions.get("window");
-export default function AppendMode(){
-
-
-renderMovies=({item})=>{
-  return(
-    <TouchableHighlight style={styles.card}>
-      <View>
-        <Image source={{uri: item.imageUrl}}/>
-        <Text>{item.name}</Text>
-      </View>
-    </TouchableHighlight>
-  )
-}
-
+export default function DownloadScreen(){
   return(
   <View  style={styles.container}>
-    <Searchbar/>
+    <AntDesign name='download' size={60} color='gray' style={styles.ıcon}/>
+    <Text style={styles.title}>No downloaded content </Text>
+    <Text style={styles.text}>The TV series and movies you have downloaded are displayed on this page.</Text>
   </View>
   );
   
@@ -32,19 +20,23 @@ const styles=StyleSheet.create({
 container:{
   alignItems:"center",
   width:width,
-  padding:3,
-  flex:1
+  padding:5,
+  flex:1,
+  backgroundColor:'#1D283E'
 },
-card:{
-  width:width/2,
-  margin:"2%",
-  height:height/3,
-  elevation:12,
-  backgroundColor:"#fff",
-  borderBottomLeftRadius:0,
-  borderBottomRightRadius:0,
-  
-  
+ıcon:{
+  marginTop:200
 },
-
+title:{
+  color:'white',
+  marginTop:30,
+  fontSize:15,
+  fontWeight:'bold'
+},
+text:{
+  color:'gray',
+  fontSize:15,
+ textAlign:'center',
+ marginTop:20
+}
 })
