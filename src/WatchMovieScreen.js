@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet,ScrollView, Image, Text,Button,Pressable, View, Dimensions } from 'react-native';
+import { StyleSheet,ScrollView, Text,Pressable, View, Dimensions } from 'react-native';
 import {Video,Audio} from "expo-av";
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
