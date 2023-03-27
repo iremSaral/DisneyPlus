@@ -1,12 +1,12 @@
 
 import { useState } from 'react';
-import { StyleSheet, ScrollView, Text, Image, View, TouchableOpacity, Dimensions } from 'react-native';
+import { StyleSheet, ScrollView, Text, Image, View, TouchableOpacity, Dimensions, Alert } from 'react-native';
 const { width, height } = Dimensions.get('window');
 import { users } from '../assets/data/users.json';
 import UserReturn from './userReturn';
 
 export default function HomeScreen({ navigation }) {
-
+  const add = require("../assets/add.png");
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -26,19 +26,41 @@ export default function HomeScreen({ navigation }) {
         </Text>
         <View style={{ padding: 10, justifyContent: 'space-around' }}>
           <UserReturn data={users} />
+          <TouchableOpacity style={styles.addContainer} onPress={() => {
+            Alert.alert('Adding User', 'Do you want add user?', [
+              {
+                text: 'Ask me later',
+                onPress: () => console.log('Adding Press'),
+              },
+
+            ])
+          }}>
+
+            < Image style={styles.profile} source={add} />
+            <Text style={{ color: 'white' }}>Add user</Text>
+          </TouchableOpacity>
         </View>
 
       </View>
-    </ScrollView>
+    </ScrollView >
   )
 }
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#1D283E',
-    height,
 
+  },
+  profile: {
+    width: 140,
+    height: 140,
+    borderRadius: 100,
+    marginTop: 20,
+    backgroundColor: "gray"
 
+  },
+  addContainer: {
+    alignItems: "center",
   },
   touch: {
     marginTop: 40,

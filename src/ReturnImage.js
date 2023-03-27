@@ -1,7 +1,7 @@
 
 
 export function getImage(image) {
-  
+
   let imageSrc = require('../assets/images/DisneyPlus.png');
   switch (image) {
     case "poster1.png":
@@ -36,6 +36,18 @@ export function getImage(image) {
       break;
     case 'poster12.png':
       imageSrc = require("../assets/images/poster12.png");
+      break;
+    case 'mickeymouse.png':
+      imageSrc = require("../assets/profileImage/mickeymouse.png");
+      break;
+    case 'mickeygirl.jpg':
+      imageSrc = require("../assets/profileImage/mickeygirl.jpg");
+      break;
+    case "olaf.jpg":
+      imageSrc = require("../assets/profileImage/olaf.jpg");
+      break;
+    case "tavşan.jpg":
+      imageSrc = require("../assets/profileImage/tavşan.jpg");
       break;
 
     default:

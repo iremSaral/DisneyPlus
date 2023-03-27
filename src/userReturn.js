@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text, View, StyleSheet, Dimensions, TouchableOpacity, Image } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
-import pp from '../assets/profileImage/olaf.jpg'
+import { getImage } from './ReturnImage';
 const { width, height } = Dimensions.get("window");
+
 const userList = ({ data }) => {
 
     return (
@@ -15,7 +16,7 @@ const userList = ({ data }) => {
                     return (
                         <View style={{ padding: 20, alignItems: 'center' }}>
                             <TouchableOpacity>
-                                <Image source={pp} style={styles.profile} />
+                                <Image source={getImage(item.image)} style={styles.profile} />
                             </TouchableOpacity>
                             <Text style={{ color: 'white', textAlign: 'center', padding: 5 }}>{item.name}</Text>
                         </View>
