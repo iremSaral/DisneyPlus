@@ -9,7 +9,7 @@ git clone https://github.com/iremSaral/DisneyPlus.git
 ```
 ## Some UI Photos
 
-![HomeScreen](C:\Users\asus\Desktop\Disney+\Resimler\HomeScreen.jpg)
+![HomeScreen](Disney+\Resimler\HomeScreen.jpg)
 ## Technologies Used
 
 - React Native
